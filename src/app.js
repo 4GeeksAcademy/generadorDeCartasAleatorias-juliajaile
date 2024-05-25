@@ -2,6 +2,10 @@
 import "bootstrap";
 import "./style.css";
 
+setTimeout(function() {
+  window.location.reload();
+}, 10000);
+
 window.onload = () => {
   document.querySelector(".card").classList.add(generateRandomSuit());
   document.querySelector(".card").innerHTML = generateRandomNumbers();
